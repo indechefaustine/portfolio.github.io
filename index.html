@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/logo.jpg">
+    <title>Faustine Indeche Portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Style the form container */
+        form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #333;
+        }
+
+        form h1 {
+            font-size: 50px;
+            font-weight: 600;
+            text-align: center;
+            color: white;
+        }
+
+        /* Style the input fields and textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            /* Account for padding */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #fff;
+        }
+
+        /* Ensure textarea is resizable */
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Style the submit button */
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Change the button color on hover */
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style the hCaptcha container */
+        .h-captcha {
+            margin-bottom: 15px;
+        }
+
+        /* Add some spacing at the bottom of the form */
+        form {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header>
+
+        <div class="user">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <h3 class="name">Faustine Indeche</h3>
+            <h2 class="nickname"><span>(Faustine)</span></h3>
+                <p class="post">Pastry Chef</p>
+        </div>
+
+        <button id="open-btn" class="btn">Tic Toc</button>
+        <div class="overlay" id="modal">
+            <div class="clock">
+                <button id="close-btn" class="btn">Close</button>
+                <h2>Time is</h2>
+                <div id="time" class="time">
+                    <div>
+                        <span id="hours">00</span>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <span id="minutes">00</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <span id="seconds">--</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <h3>Hi, There !</h3>
+        <h1><span>I'm Faustine Indeche</span></h1>
+        <p>As a dedicated pastry artisan, my career objectives are centered
+            around continuous growth, innovation, and mastery within the realm
+            of pastry arts. With a fervent passion for creating delectable delights
+            and an unwavering commitment to excellence.
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> me </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> Faustine Indeche</h3>
+                <h3> <span> age : </span> 22 </h3>
+                <h3> <span> qualification : </span> Pastry Art</h3>
+                <h3> <span> post : </span> Pastry Chef </h3>
+                <h3> <span> language : </span> English & Swahili </h3>
+                <!--<a href="https://www.facebook.com/bkim.king">
+            <button class="btn"><i class="fab fa-facebook-f"></i> Follow </button>
+        </a>-->
+            </div>
+
+            <div class="counter">
+
+                <div class="box">
+                    <span>6+</span>
+                    <h3>month of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>12+</span>
+                    <h3>project completed</h3>
+                </div>
+
+                <div class="box">
+                    <span>10+</span>
+                    <h3>happy clients</h3>
+                </div>
+
+                <div class="box">
+                    <span>2+</span>
+                    <h3>awards won</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2015</span>
+                <h3>Completed Primary School</h3>
+                <p>It was a 8 year journey of my Primary school life.
+                    Completed primary level at Musingi Primary School.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2019</span>
+                <h3>Completed Secondary School</h3>
+                <p>It was an amazing time in my Secondary school life.
+                    Finally completed secondary level at St Francis Xavier Secondary School.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2024</span>
+                <h3>Pastry Art</h3>
+                <p>After my Secondary KNEC exam, i joined Kenswed Technical Vocational Training Center to pursue my ICT
+                    course, And finally i got a credit.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2024</span>
+                <h3>Attachment</h3>
+                <p>After finishing my Pastry Art course. I went for an attachment at Tomit Bakers in oloolua, Ngong
+                    Therefore gaining skills and experience in bread making, slicing and packaging </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio & Projects</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/1.jpg" alt="">
+            </div>
+
+            <div class="box">
+
+                <img src="images/2.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/3.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/4.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/5.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/6.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3 class="lower"> <i class="fas fa-envelope"></i> <a href="mailto:fastineindeche@gmail.com"
+                            target="_blank">fastineindeche@gmail.com</a></h3>
+                    <h3> <i class="fas fa-phone"></i><a href="tel:+254-113563920" target="_blank">+254-113563920</a>
+                    </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kibiko, Ngong</h3>
+                </div>
+
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <h1>Contact me</h1>
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="a6511124-2ba9-4ea6-9a94-e2eca0fa6041">
+
+                <!-- Form Inputs. Each input must have a name="" attribute -->
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <textarea name="message" placeholder="message" required></textarea>
+
+
+                <button type="submit">Submit Form</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+
+    <!-- scroll top button  -->
+
+    <a href="#home" class="top">
+        <img src="images/scroll.png" alt="Scroll For Top">
+    </a>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/time.js"></script>
+
+</body>
+
+</html>
